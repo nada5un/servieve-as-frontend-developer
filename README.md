@@ -30,3 +30,13 @@
     int a[1000000] : 4MB
     
     int a[2000][2000] : 16MB
+    
+
+2. 코딩테스트 기본 
+
+- 입력 받기 : input().split() / map(int,input().split()) (정수형으로 입력받기)
+
+- 입력 값을 리스트에 넣기 : arr = list(map(int,input().split())
+
+- 내장 정렬 함수 : arr.sort() (오름차순) / arr.sort(reverse=True) (내림차순)
+   
