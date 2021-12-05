@@ -39,4 +39,13 @@
 - 입력 값을 리스트에 넣기 : arr = list(map(int,input().split())
 
 - 내장 정렬 함수 : arr.sort() (오름차순) / arr.sort(reverse=True) (내림차순)
-   
+
+- 2차원 배열 입력받기 :
+
+    ```
+    n,m = map(int,input().split())
+    arr = [[] for _ in range(n)]
+
+    for i in range(n):
+      arr[i] = list(map(int,input().split()))
+    ```
