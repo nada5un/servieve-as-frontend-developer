@@ -1,4 +1,5 @@
 function solution(N, stages) {
+    var answer = [];
     // 전체 스테이지 갯수 N
 
     // 사용자가 멈춰 있는 스테이지 번호 stages
@@ -12,7 +13,7 @@ function solution(N, stages) {
     // 스테이지별 도전 중인 유저
     var stageUsers = new Array(N + 1).fill(0);
     var stageTryUsers = new Array(N + 1).fill(0);
-    var stageFailPercents = Array.from({ length: N + 1 }, (_, i) => ({
+    var stageFailPercents = [...Array(N)].map((_, i) => ({
         stage: i + 1,
         percent: 0,
     }));
