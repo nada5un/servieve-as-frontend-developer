@@ -14,9 +14,12 @@ function solution(prices) {
             const j = stack.pop();
             answer[j] = i - j;
         }
+
+        // 가격이 떨어지지 않았다면
         stack.push(i);
     }
 
+    // 스택에 남아있는 것들 비교
     while (stack.length > 0) {
         const j = stack.pop();
         answer[j] = n - 1 - j;
